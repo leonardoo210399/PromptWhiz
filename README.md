@@ -1,449 +1,364 @@
-<div align="center">
-  <br />
-    <a href="https://youtu.be/wm5gMKuwSYk?feature=shared" target="_blank">
-      <img src="https://github.com/adrianhajdin/project_next_14_ai_prompt_sharing/assets/151519281/40a6e6fe-7f97-45bc-8113-bb5732fdcdb7" alt="Project Banner">
-    </a>
-  <br />
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
+</p>
+<p align="center">
+    <h1 align="center">PROMPTWHIZ</h1>
+</p>
+<p align="center">
+    <em>HTTP error 401 for prompt `slogan`</em>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/github/license/leonardoo210399/PromptWhiz.git?style=flat&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/leonardoo210399/PromptWhiz.git?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/leonardoo210399/PromptWhiz.git?style=flat&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/leonardoo210399/PromptWhiz.git?style=flat&color=0080ff" alt="repo-language-count">
+<p>
+<p align="center">
+		<em>Developed with the software and tools below.</em>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black" alt="JavaScript">
+	<img src="https://img.shields.io/badge/PostCSS-DD3A0A.svg?style=flat&logo=PostCSS&logoColor=white" alt="PostCSS">
+	<img src="https://img.shields.io/badge/Autoprefixer-DD3735.svg?style=flat&logo=Autoprefixer&logoColor=white" alt="Autoprefixer">
+	<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black" alt="React">
+	<img src="https://img.shields.io/badge/MongoDB-47A248.svg?style=flat&logo=MongoDB&logoColor=white" alt="MongoDB">
+	<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
+</p>
+<hr>
 
-  <div>
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000" alt="Next.js" />
-    <img src="https://img.shields.io/badge/-Mongodb-black?style=for-the-badge&logoColor=white&logo=mongodb&color=47A248" alt="mongodb" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-  </div>
+##  Quick Links
 
-  <h3 align="center">Next.js 14 AI Prompt Sharing Application</h3>
+> - [ Overview](#-overview)
+> - [ Features](#-features)
+> - [ Repository Structure](#-repository-structure)
+> - [ Modules](#-modules)
+> - [ Getting Started](#-getting-started)
+>   - [ Installation](#-installation)
+>   - [ Running PromptWhiz](#-running-PromptWhiz)
+>   - [ Tests](#-tests)
+> - [ Project Roadmap](#-project-roadmap)
+> - [ Contributing](#-contributing)
+> - [ License](#-license)
+> - [ Acknowledgments](#-acknowledgments)
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
-</div>
+---
 
-## 📋 <a name="table">Table of Contents</a>
+##  Overview
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-6. 🔗 [Links](#links)
-7. 🚀 [More](#more)
+HTTP error 401 for prompt `overview`
 
-## 🚨 Tutorial
+---
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
+##  Features
 
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
+HTTP error 401 for prompt `features`
 
-<a href="https://youtu.be/wm5gMKuwSYk?feature=shared" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
+---
 
-## <a name="introduction">🤖 Introduction</a>
+##  Repository Structure
 
-Develop a Next.js application that highlights the key features of Next.js along with a comprehensive CRUD AI Prompt sharing system utilizing a MongoDB database and implementing NextAuth authentication.
-
-If you're getting started and need assistance or face any bugs, join our active Discord community with over 27k+ members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- Next.js
-- MongoDB
-- NextAuth
-- TailwindCSS
-
-## <a name="features">🔋 Features</a>
-
-👉 **Modern Design with Glassmorphism Trend Style**: A modern and visually appealing design, incorporating the glassmorphism trend style for a sleek and contemporary appearance.
-
-👉 **Discover and Share AI Prompts**: Allow users to discover AI prompts shared by the community and create their own prompts to share with the world.
-
-👉 **Edit and Delete Created Prompts**: Users have the ability to edit their created prompts at any time and delete them when needed.
-
-👉 **Profile Page**: Each user gets a dedicated profile page showcasing all the prompts they've created, providing an overview of their contributions.
-
-👉 **View Other People's Profiles**: Users can explore the profiles of other creators to view the prompts they've shared, fostering a sense of community.
-
-👉 **Copy to Clipboard**: Implement a convenient "Copy to Clipboard" functionality for users to easily copy the AI prompts for their use.
-
-👉 **Search Prompts by Specific Tag**: Allow users to search for prompts based on specific tags, making it easier to find prompts related to specific topics.
-
-👉 **Google Authentication using NextAuth**: Enable secure Google authentication using NextAuth, ensuring a streamlined and trustworthy login experience.
-
-👉 **Responsive Website**: Develop a fully responsive website to ensure optimal user experience across various devices, from desktops to smartphones
-
-and many more, including code architecture and reusability 
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/adrianhajdin/project_next_13_ai_prompt_sharing.git
-cd project_next_13_ai_prompt_sharing
+```sh
+└── PromptWhiz/
+    ├── README.md
+    ├── app
+    │   ├── api
+    │   │   ├── auth
+    │   │   │   └── [...nextauth]
+    │   │   │       └── route.js
+    │   │   ├── prompt
+    │   │   │   ├── [id]
+    │   │   │   │   └── route.js
+    │   │   │   ├── new
+    │   │   │   │   └── route.js
+    │   │   │   └── route.js
+    │   │   └── users
+    │   │       └── [id]
+    │   │           └── posts
+    │   ├── create-prompt
+    │   │   └── page.jsx
+    │   ├── layout.jsx
+    │   ├── page.jsx
+    │   ├── profile
+    │   │   ├── [id]
+    │   │   │   └── page.jsx
+    │   │   ├── loading.jsx
+    │   │   └── page.jsx
+    │   └── update-prompt
+    │       └── page.jsx
+    ├── components
+    │   ├── Feed.jsx
+    │   ├── Form.jsx
+    │   ├── Nav.jsx
+    │   ├── Profile.jsx
+    │   ├── PromptCard.jsx
+    │   └── Provider.jsx
+    ├── jsconfig.json
+    ├── models
+    │   ├── prompt.js
+    │   └── user.js
+    ├── next.config.js
+    ├── package-lock.json
+    ├── package.json
+    ├── postcss.config.js
+    ├── public
+    │   └── assets
+    │       ├── icons
+    │       │   ├── copy.svg
+    │       │   ├── link.svg
+    │       │   ├── loader.svg
+    │       │   ├── menu.svg
+    │       │   └── tick.svg
+    │       └── images
+    │           ├── grid.svg
+    │           ├── logo-text.svg
+    │           └── logo.svg
+    ├── styles
+    │   └── globals.css
+    ├── tailwind.config.js
+    └── utils
+        └── database.js
 ```
 
-**Installation**
+---
 
-Install the project dependencies using npm:
+##  Modules
 
-```bash
+<details closed><summary>.</summary>
+
+| File                                                                                                   | Summary                                        |
+| ---                                                                                                    | ---                                            |
+| [jsconfig.json](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/jsconfig.json)           | HTTP error 401 for prompt `jsconfig.json`      |
+| [next.config.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/next.config.js)         | HTTP error 401 for prompt `next.config.js`     |
+| [postcss.config.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/postcss.config.js)   | HTTP error 401 for prompt `postcss.config.js`  |
+| [package.json](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/package.json)             | HTTP error 401 for prompt `package.json`       |
+| [tailwind.config.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/tailwind.config.js) | HTTP error 401 for prompt `tailwind.config.js` |
+| [package-lock.json](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/package-lock.json)   | HTTP error 401 for prompt `package-lock.json`  |
+
+</details>
+
+<details closed><summary>styles</summary>
+
+| File                                                                                            | Summary                                        |
+| ---                                                                                             | ---                                            |
+| [globals.css](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/styles/globals.css) | HTTP error 401 for prompt `styles/globals.css` |
+
+</details>
+
+<details closed><summary>utils</summary>
+
+| File                                                                                           | Summary                                       |
+| ---                                                                                            | ---                                           |
+| [database.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/utils/database.js) | HTTP error 401 for prompt `utils/database.js` |
+
+</details>
+
+<details closed><summary>models</summary>
+
+| File                                                                                        | Summary                                      |
+| ---                                                                                         | ---                                          |
+| [prompt.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/models/prompt.js) | HTTP error 401 for prompt `models/prompt.js` |
+| [user.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/models/user.js)     | HTTP error 401 for prompt `models/user.js`   |
+
+</details>
+
+<details closed><summary>components</summary>
+
+| File                                                                                                      | Summary                                               |
+| ---                                                                                                       | ---                                                   |
+| [PromptCard.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/PromptCard.jsx) | HTTP error 401 for prompt `components/PromptCard.jsx` |
+| [Provider.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/Provider.jsx)     | HTTP error 401 for prompt `components/Provider.jsx`   |
+| [Form.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/Form.jsx)             | HTTP error 401 for prompt `components/Form.jsx`       |
+| [Feed.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/Feed.jsx)             | HTTP error 401 for prompt `components/Feed.jsx`       |
+| [Profile.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/Profile.jsx)       | HTTP error 401 for prompt `components/Profile.jsx`    |
+| [Nav.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/Nav.jsx)               | HTTP error 401 for prompt `components/Nav.jsx`        |
+
+</details>
+
+<details closed><summary>app</summary>
+
+| File                                                                                       | Summary                                    |
+| ---                                                                                        | ---                                        |
+| [page.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/page.jsx)     | HTTP error 401 for prompt `app/page.jsx`   |
+| [layout.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/layout.jsx) | HTTP error 401 for prompt `app/layout.jsx` |
+
+</details>
+
+<details closed><summary>app.create-prompt</summary>
+
+| File                                                                                                 | Summary                                                |
+| ---                                                                                                  | ---                                                    |
+| [page.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/create-prompt/page.jsx) | HTTP error 401 for prompt `app/create-prompt/page.jsx` |
+
+</details>
+
+<details closed><summary>app.profile</summary>
+
+| File                                                                                                 | Summary                                             |
+| ---                                                                                                  | ---                                                 |
+| [loading.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/profile/loading.jsx) | HTTP error 401 for prompt `app/profile/loading.jsx` |
+| [page.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/profile/page.jsx)       | HTTP error 401 for prompt `app/profile/page.jsx`    |
+
+</details>
+
+<details closed><summary>app.profile.[id]</summary>
+
+| File                                                                                                | Summary                                               |
+| ---                                                                                                 | ---                                                   |
+| [page.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/profile/[id]/page.jsx) | HTTP error 401 for prompt `app/profile/[id]/page.jsx` |
+
+</details>
+
+<details closed><summary>app.api.prompt</summary>
+
+| File                                                                                              | Summary                                             |
+| ---                                                                                               | ---                                                 |
+| [route.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/api/prompt/route.js) | HTTP error 401 for prompt `app/api/prompt/route.js` |
+
+</details>
+
+<details closed><summary>app.api.prompt.[id]</summary>
+
+| File                                                                                                   | Summary                                                  |
+| ---                                                                                                    | ---                                                      |
+| [route.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/api/prompt/[id]/route.js) | HTTP error 401 for prompt `app/api/prompt/[id]/route.js` |
+
+</details>
+
+<details closed><summary>app.api.prompt.new</summary>
+
+| File                                                                                                  | Summary                                                 |
+| ---                                                                                                   | ---                                                     |
+| [route.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/api/prompt/new/route.js) | HTTP error 401 for prompt `app/api/prompt/new/route.js` |
+
+</details>
+
+<details closed><summary>app.api.users.[id].posts</summary>
+
+| File                                                                                                        | Summary                                                       |
+| ---                                                                                                         | ---                                                           |
+| [route.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/api/users/[id]/posts/route.js) | HTTP error 401 for prompt `app/api/users/[id]/posts/route.js` |
+
+</details>
+
+<details closed><summary>app.api.auth.[...nextauth]</summary>
+
+| File                                                                                                          | Summary                                                         |
+| ---                                                                                                           | ---                                                             |
+| [route.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/api/auth/[...nextauth]/route.js) | HTTP error 401 for prompt `app/api/auth/[...nextauth]/route.js` |
+
+</details>
+
+<details closed><summary>app.update-prompt</summary>
+
+| File                                                                                                 | Summary                                                |
+| ---                                                                                                  | ---                                                    |
+| [page.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/update-prompt/page.jsx) | HTTP error 401 for prompt `app/update-prompt/page.jsx` |
+
+</details>
+
+---
+
+##  Getting Started
+
+***Requirements***
+
+Ensure you have the following dependencies installed on your system:
+
+* **JavaScript**: `version x.y.z`
+
+###  Installation
+
+1. Clone the PromptWhiz repository:
+
+```sh
+git clone https://github.com/leonardoo210399/PromptWhiz.git
+```
+
+2. Change to the project directory:
+
+```sh
+cd PromptWhiz
+```
+
+3. Install the dependencies:
+
+```sh
 npm install
 ```
 
-**Set Up Environment Variables**
+###  Running PromptWhiz
 
-Create a new file named `.env` in the root of your project and add the following content:
+Use the following command to run PromptWhiz:
 
-```env
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_URL_INTERNAL=http://localhost:3000
-NEXTAUTH_SECRET=
-GOOGLE_ID=
-GOOGLE_CLIENT_SECRET=
-MONGODB_URI=
+```sh
+node app.js
 ```
 
-Replace the placeholder values with your actual credentials. You can obtain these credentials by signing up on these corresponding websites from [Google Cloud Console](https://console.cloud.google.com/welcome?rapt=AEjHL4MBaLLneW6OfAHf_zgms1eWZFw1wdy0_KIC4uh1nEqh2m4ojOvrXNlzJ4h7CZTkpiWgcsoHbUvS-FMdCP7WIkaVlPAeU7cnVR6Y0wJHeLMOtU6KAzA&project=promptopia-385410), [Cryptpool](https://www.cryptool.org/en/cto/openssl) (for random Auth Secret), and [MongoDB](https://www.mongodb.com/). 
+###  Tests
 
-**Running the Project**
+To execute tests, run:
 
-```bash
-npm run dev
+```sh
+npm test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+---
 
-## <a name="snippets">🕸️ Snippets</a>
+##  Project Roadmap
 
-<details>
-<summary><code>globals.css</code></summary>
+- [X] `► INSERT-TASK-1`
+- [ ] `► INSERT-TASK-2`
+- [ ] `► ...`
 
-```css
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+---
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+##  Contributing
 
-/* 
-  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
-*/
+Contributions are welcome! Here are several ways you can contribute:
 
-.main {
-  width: 100vw;
-  min-height: 100vh;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  padding: 120px 24px 160px 24px;
-  pointer-events: none;
-}
+- **[Submit Pull Requests](https://github.com/leonardoo210399/PromptWhiz.git/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/leonardoo210399/PromptWhiz.git/discussions)**: Share your insights, provide feedback, or ask questions.
+- **[Report Issues](https://github.com/leonardoo210399/PromptWhiz.git/issues)**: Submit bugs found or log feature requests for Promptwhiz.
 
-.main:before {
-  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
-  position: absolute;
-  content: "";
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
+<details closed>
+    <summary>Contributing Guidelines</summary>
 
-.main:after {
-  content: "";
-  background-image: url("/assets/images/grid.svg");
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.4;
-  filter: invert(1);
-}
+1. **Fork the Repository**: Start by forking the project repository to your GitHub account.
+2. **Clone Locally**: Clone the forked repository to your local machine using a Git client.
+   ```sh
+   git clone https://github.com/leonardoo210399/PromptWhiz.git
+   ```
+3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+   ```sh
+   git checkout -b new-feature-x
+   ```
+4. **Make Your Changes**: Develop and test your changes locally.
+5. **Commit Your Changes**: Commit with a clear message describing your updates.
+   ```sh
+   git commit -m 'Implemented new feature x.'
+   ```
+6. **Push to GitHub**: Push the changes to your forked repository.
+   ```sh
+   git push origin new-feature-x
+   ```
+7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
 
-.gradient {
-  height: fit-content;
-  z-index: 3;
-  width: 100%;
-  max-width: 640px;
-  background-image: radial-gradient(
-      at 27% 37%,
-      hsla(215, 98%, 61%, 1) 0px,
-      transparent 0%
-    ),
-    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
-    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
-    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  filter: blur(100px) saturate(150%);
-  top: 80px;
-  opacity: 0.15;
-}
-
-@media screen and (max-width: 640px) {
-  .main {
-    padding: 0;
-  }
-}
-
-/* Tailwind Styles */
-
-.app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
-}
-
-.black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
-}
-
-.outline_btn {
-  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
-}
-
-.head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
-}
-
-.orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
-}
-
-.green_gradient {
-  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
-}
-
-.blue_gradient {
-  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
-}
-
-.desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
-}
-
-.search_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
-}
-
-.copy_btn {
-  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
-}
-
-.glassmorphism {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
-}
-
-.prompt_layout {
-  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
-}
-
-/* Feed Component */
-.feed {
-  @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
-}
-
-/* Form Component */
-.form_textarea {
-  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
-}
-
-.form_input {
-  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
-}
-
-/* Nav Component */
-.logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
-}
-
-.dropdown {
-  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
-}
-
-.dropdown_link {
-  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
-}
-
-/* PromptCard Component */
-.prompt_card {
-  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
-}
-
-.flex-center {
-  @apply flex justify-center items-center;
-}
-
-.flex-start {
-  @apply flex justify-start items-start;
-}
-
-.flex-end {
-  @apply flex justify-end items-center;
-}
-
-.flex-between {
-  @apply flex justify-between items-center;
-}
-```
+Once your PR is reviewed and approved, it will be merged into the main branch.
 
 </details>
 
-<details>
-<summary><code>jsconfig.json</code></summary>
+---
 
-```json
-{
-  "compilerOptions": {
-    "paths": {
-      "@*": ["./*"]
-    }
-  }
-}
-```
+##  License
 
-</details>
+This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
 
-<details>
-<summary><code>route.js</code></summary>
+---
 
-```javascript
-import Prompt from "@models/prompt";
-import { connectToDB } from "@utils/database";
+##  Acknowledgments
 
-export const GET = async (request, { params }) => {
-    try {
-        await connectToDB()
+- List any resources, contributors, inspiration, etc. here.
 
-        const prompt = await Prompt.findById(params.id).populate("creator")
-        if (!prompt) return new Response("Prompt Not Found", { status: 404 });
+[**Return**](#-quick-links)
 
-        return new Response(JSON.stringify(prompt), { status: 200 })
-
-    } catch (error) {
-        return new Response("Internal Server Error", { status: 500 });
-    }
-}
-
-export const PATCH = async (request, { params }) => {
-    const { prompt, tag } = await request.json();
-
-    try {
-        await connectToDB();
-
-        // Find the existing prompt by ID
-        const existingPrompt = await Prompt.findById(params.id);
-
-        if (!existingPrompt) {
-            return new Response("Prompt not found", { status: 404 });
-        }
-
-        // Update the prompt with new data
-        existingPrompt.prompt = prompt;
-        existingPrompt.tag = tag;
-
-        await existingPrompt.save();
-
-        return new Response("Successfully updated the Prompts", { status: 200 });
-    } catch (error) {
-        return new Response("Error Updating Prompt", { status: 500 });
-    }
-};
-
-export const DELETE = async (request, { params }) => {
-    try {
-        await connectToDB();
-
-        // Find the prompt by ID and remove it
-        await Prompt.findByIdAndRemove(params.id);
-
-        return new Response("Prompt deleted successfully", { status: 200 });
-    } catch (error) {
-        return new Response("Error deleting prompt", { status: 500 });
-    }
-};
-```
-
-</details>
-
-<details>
-<summary><code>tailwind.config.js</code></summary>
-
-```javascript
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      fontFamily: {
-        satoshi: ['Satoshi', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
-      },
-      colors: {
-        'primary-orange': '#FF5722',
-      }
-    },
-  },
-  plugins: [],
-}
-```
-
-</details>
-
-<details>
-<summary><code>user.js</code></summary>
-
-```javascript
-username: {
-    type: String,
-    required: [true, 'Username is required!'],
-    match: [/^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/, "Username invalid, it should contain 8-20 alphanumeric letters and be unique!"]
-  },
-```
-
-</details>
-
-## <a name="links">🔗 Links</a>
-
-Assets used in the project can be found [here](https://drive.google.com/file/d/15bGW9HBImu1p3HAYalnaj2Ig_Sn-1c-f/view)
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js 14 Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://jsmastery.pro/next14" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/557837ce-f612-4530-ab24-189e75133c71" alt="Project Banner">
-</a>
-
-<br />
-<br />
-
-**Accelerate your professional journey with the Expert Training program**
-
-And if you're hungry for more than just a course and want to understand how we learn and tackle tech challenges, hop into our personalized masterclass. We cover best practices, different web skills, and offer mentorship to boost your confidence. Let's learn and grow together!
-
-<a href="https://www.jsmastery.pro/masterclass" target="_blank">
-<img src="https://github.com/sujatagunale/EasyRead/assets/151519281/fed352ad-f27b-400d-9b8f-c7fe628acb84" alt="Project Banner">
-</a>
-
-#
+---
