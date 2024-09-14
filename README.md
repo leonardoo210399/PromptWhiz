@@ -1,20 +1,21 @@
+
 <p align="center">
   <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
 </p>
 <p align="center">
-    <h1 align="center">PROMPTWHIZ</h1>
+    <h1 align="center">PROMPTWHIZ.GIT</h1>
 </p>
 <p align="center">
-    <em>HTTP error 401 for prompt `slogan`</em>
+    <em><code>❯ Empower your creativity with prompts.</code></em>
 </p>
 <p align="center">
-	<img src="https://img.shields.io/github/license/leonardoo210399/PromptWhiz.git?style=flat&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/license/leonardoo210399/PromptWhiz.git?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
 	<img src="https://img.shields.io/github/last-commit/leonardoo210399/PromptWhiz.git?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 	<img src="https://img.shields.io/github/languages/top/leonardoo210399/PromptWhiz.git?style=flat&color=0080ff" alt="repo-top-language">
 	<img src="https://img.shields.io/github/languages/count/leonardoo210399/PromptWhiz.git?style=flat&color=0080ff" alt="repo-language-count">
-<p>
+</p>
 <p align="center">
-		<em>Developed with the software and tools below.</em>
+		<em>Built with the tools and technologies:</em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black" alt="JavaScript">
@@ -23,42 +24,53 @@
 	<img src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black" alt="React">
 	<img src="https://img.shields.io/badge/MongoDB-47A248.svg?style=flat&logo=MongoDB&logoColor=white" alt="MongoDB">
 	<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
+	<img src="https://img.shields.io/badge/NextAuth-000000.svg?style=flat&logo=next.js&logoColor=white" alt="NextAuth">
 </p>
-<hr>
 
-##  Quick Links
+<br>
 
-> - [ Overview](#-overview)
-> - [ Features](#-features)
-> - [ Repository Structure](#-repository-structure)
-> - [ Modules](#-modules)
-> - [ Getting Started](#-getting-started)
->   - [ Installation](#-installation)
->   - [ Running PromptWhiz](#-running-PromptWhiz)
->   - [ Tests](#-tests)
-> - [ Project Roadmap](#-project-roadmap)
-> - [ Contributing](#-contributing)
-> - [ License](#-license)
-> - [ Acknowledgments](#-acknowledgments)
+##### 🔗 Table of Contents
 
----
-
-##  Overview
-
-HTTP error 401 for prompt `overview`
+- [📍 Overview](#-overview)
+- [👾 Features](#-features)
+- [📂 Repository Structure](#-repository-structure)
+- [🧩 Modules](#-modules)
+- [🔐 Authentication](#-authentication)
+- [🚀 Getting Started](#-getting-started)
+    - [🔖 Prerequisites](#-prerequisites)
+    - [📦 Installation](#-installation)
+    - [🤖 Usage](#-usage)
+    - [🧪 Tests](#-tests)
+- [📌 Project Roadmap](#-project-roadmap)
+- [🤝 Contributing](#-contributing)
+- [🎗 License](#-license)
+- [🙌 Acknowledgments](#-acknowledgments)
 
 ---
 
-##  Features
+## 📍 Overview
 
-HTTP error 401 for prompt `features`
+PromptWhiz is a platform designed to help users create, share, and explore creative prompts. Whether you're a writer, artist, or developer, PromptWhiz can spark inspiration and facilitate collaboration. With user authentication, prompt creation, and profile management, PromptWhiz makes it easy for the community to contribute and explore.
 
 ---
 
-##  Repository Structure
+## 👾 Features
+
+- User authentication and authorization via **NextAuth**.
+- OAuth support for multiple providers (Google, GitHub, etc.).
+- Create, update, and manage prompts.
+- View other users' profiles and their prompts.
+- Responsive design with **Tailwind CSS**.
+- MongoDB integration for storing user and prompt data.
+- Efficient API routes for managing prompts.
+- Secure database management with **Mongoose**.
+
+---
+
+## 📂 Repository Structure
 
 ```sh
-└── PromptWhiz/
+└── PromptWhiz.git/
     ├── README.md
     ├── app
     │   ├── api
@@ -111,6 +123,7 @@ HTTP error 401 for prompt `features`
     │       └── images
     │           ├── grid.svg
     │           ├── logo-text.svg
+    │           ├── logo.png
     │           └── logo.svg
     ├── styles
     │   └── globals.css
@@ -121,244 +134,183 @@ HTTP error 401 for prompt `features`
 
 ---
 
-##  Modules
+## 🧩 Modules
 
-<details closed><summary>.</summary>
+<details><summary>Configuration Files</summary>
 
-| File                                                                                                   | Summary                                        |
-| ---                                                                                                    | ---                                            |
-| [jsconfig.json](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/jsconfig.json)           | HTTP error 401 for prompt `jsconfig.json`      |
-| [next.config.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/next.config.js)         | HTTP error 401 for prompt `next.config.js`     |
-| [postcss.config.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/postcss.config.js)   | HTTP error 401 for prompt `postcss.config.js`  |
-| [package.json](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/package.json)             | HTTP error 401 for prompt `package.json`       |
-| [tailwind.config.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/tailwind.config.js) | HTTP error 401 for prompt `tailwind.config.js` |
-| [package-lock.json](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/package-lock.json)   | HTTP error 401 for prompt `package-lock.json`  |
-
-</details>
-
-<details closed><summary>styles</summary>
-
-| File                                                                                            | Summary                                        |
-| ---                                                                                             | ---                                            |
-| [globals.css](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/styles/globals.css) | HTTP error 401 for prompt `styles/globals.css` |
+| File | Summary |
+| --- | --- |
+| `jsconfig.json` | Configuration for JavaScript project paths and aliases. |
+| `next.config.js` | Configuration for Next.js settings. |
+| `postcss.config.js` | PostCSS configuration for managing CSS processing. |
+| `package.json` | Contains project dependencies and scripts. |
+| `tailwind.config.js` | Tailwind CSS configuration file. |
 
 </details>
 
-<details closed><summary>utils</summary>
+<details><summary>Components</summary>
 
-| File                                                                                           | Summary                                       |
-| ---                                                                                            | ---                                           |
-| [database.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/utils/database.js) | HTTP error 401 for prompt `utils/database.js` |
-
-</details>
-
-<details closed><summary>models</summary>
-
-| File                                                                                        | Summary                                      |
-| ---                                                                                         | ---                                          |
-| [prompt.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/models/prompt.js) | HTTP error 401 for prompt `models/prompt.js` |
-| [user.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/models/user.js)     | HTTP error 401 for prompt `models/user.js`   |
+| File | Summary |
+| --- | --- |
+| `PromptCard.jsx` | Displays individual prompts. |
+| `Provider.jsx` | Context provider for managing global states. |
+| `Form.jsx` | Form component for creating or updating prompts. |
+| `Feed.jsx` | Displays a feed of prompts. |
+| `Profile.jsx` | User profile component showing user information and prompts. |
+| `Nav.jsx` | Navigation bar for the application. |
 
 </details>
 
-<details closed><summary>components</summary>
+<details><summary>Models</summary>
 
-| File                                                                                                      | Summary                                               |
-| ---                                                                                                       | ---                                                   |
-| [PromptCard.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/PromptCard.jsx) | HTTP error 401 for prompt `components/PromptCard.jsx` |
-| [Provider.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/Provider.jsx)     | HTTP error 401 for prompt `components/Provider.jsx`   |
-| [Form.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/Form.jsx)             | HTTP error 401 for prompt `components/Form.jsx`       |
-| [Feed.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/Feed.jsx)             | HTTP error 401 for prompt `components/Feed.jsx`       |
-| [Profile.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/Profile.jsx)       | HTTP error 401 for prompt `components/Profile.jsx`    |
-| [Nav.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/components/Nav.jsx)               | HTTP error 401 for prompt `components/Nav.jsx`        |
-
-</details>
-
-<details closed><summary>app</summary>
-
-| File                                                                                       | Summary                                    |
-| ---                                                                                        | ---                                        |
-| [page.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/page.jsx)     | HTTP error 401 for prompt `app/page.jsx`   |
-| [layout.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/layout.jsx) | HTTP error 401 for prompt `app/layout.jsx` |
-
-</details>
-
-<details closed><summary>app.create-prompt</summary>
-
-| File                                                                                                 | Summary                                                |
-| ---                                                                                                  | ---                                                    |
-| [page.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/create-prompt/page.jsx) | HTTP error 401 for prompt `app/create-prompt/page.jsx` |
-
-</details>
-
-<details closed><summary>app.profile</summary>
-
-| File                                                                                                 | Summary                                             |
-| ---                                                                                                  | ---                                                 |
-| [loading.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/profile/loading.jsx) | HTTP error 401 for prompt `app/profile/loading.jsx` |
-| [page.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/profile/page.jsx)       | HTTP error 401 for prompt `app/profile/page.jsx`    |
-
-</details>
-
-<details closed><summary>app.profile.[id]</summary>
-
-| File                                                                                                | Summary                                               |
-| ---                                                                                                 | ---                                                   |
-| [page.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/profile/[id]/page.jsx) | HTTP error 401 for prompt `app/profile/[id]/page.jsx` |
-
-</details>
-
-<details closed><summary>app.api.prompt</summary>
-
-| File                                                                                              | Summary                                             |
-| ---                                                                                               | ---                                                 |
-| [route.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/api/prompt/route.js) | HTTP error 401 for prompt `app/api/prompt/route.js` |
-
-</details>
-
-<details closed><summary>app.api.prompt.[id]</summary>
-
-| File                                                                                                   | Summary                                                  |
-| ---                                                                                                    | ---                                                      |
-| [route.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/api/prompt/[id]/route.js) | HTTP error 401 for prompt `app/api/prompt/[id]/route.js` |
-
-</details>
-
-<details closed><summary>app.api.prompt.new</summary>
-
-| File                                                                                                  | Summary                                                 |
-| ---                                                                                                   | ---                                                     |
-| [route.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/api/prompt/new/route.js) | HTTP error 401 for prompt `app/api/prompt/new/route.js` |
-
-</details>
-
-<details closed><summary>app.api.users.[id].posts</summary>
-
-| File                                                                                                        | Summary                                                       |
-| ---                                                                                                         | ---                                                           |
-| [route.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/api/users/[id]/posts/route.js) | HTTP error 401 for prompt `app/api/users/[id]/posts/route.js` |
-
-</details>
-
-<details closed><summary>app.api.auth.[...nextauth]</summary>
-
-| File                                                                                                          | Summary                                                         |
-| ---                                                                                                           | ---                                                             |
-| [route.js](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/api/auth/[...nextauth]/route.js) | HTTP error 401 for prompt `app/api/auth/[...nextauth]/route.js` |
-
-</details>
-
-<details closed><summary>app.update-prompt</summary>
-
-| File                                                                                                 | Summary                                                |
-| ---                                                                                                  | ---                                                    |
-| [page.jsx](https://github.com/leonardoo210399/PromptWhiz.git/blob/master/app/update-prompt/page.jsx) | HTTP error 401 for prompt `app/update-prompt/page.jsx` |
+| File | Summary |
+| --- | --- |
+| `prompt.js` | Mongoose model for managing prompt data. |
+| `user.js` | Mongoose model for managing user data. |
 
 </details>
 
 ---
 
-##  Getting Started
+## 🔐 Authentication
 
-***Requirements***
+PromptWhiz uses **NextAuth.js** to handle authentication and user management. It supports multiple OAuth providers like Google and GitHub. Here's how authentication is integrated:
 
-Ensure you have the following dependencies installed on your system:
+### Features of Authentication:
+- **OAuth 2.0** providers (Google, GitHub, etc.) for seamless login.
+- **Session Management**: Users remain logged in across sessions.
+- **Custom User Model**: Integrated with MongoDB to store and manage user information.
+- **Secure Routes**: Protect certain pages and actions (e.g., creating or updating prompts) to authorized users only.
+- **API Authentication**: Secure API routes that ensure only authenticated users can interact with the backend.
 
-* **JavaScript**: `version x.y.z`
+### How It Works:
+1. **Authentication Route**: The main authentication route is located at `app/api/auth/[...nextauth]/route.js`, where NextAuth.js handles the provider callbacks and session management.
+   
+2. **Session Management**: A global provider is used to keep track of whether a user is authenticated, utilizing NextAuth's session mechanism. This ensures users can interact with the app based on their session state.
 
-###  Installation
+3. **Protected Pages**: Pages like creating or updating prompts (`create-prompt/page.jsx` and `
 
-1. Clone the PromptWhiz repository:
+update-prompt/page.jsx`) are protected. If a user is not authenticated, they are redirected to the login page.
 
-```sh
-git clone https://github.com/leonardoo210399/PromptWhiz.git
+4. **OAuth Providers Configuration**: In `next.config.js`, we have configured multiple OAuth providers like Google and GitHub for seamless login.
+
+### Environment Variables:
+To configure OAuth providers, make sure to add the following variables to your `.env.local`:
+
+```
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-secret-key
+
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+
+GITHUB_CLIENT_ID=your-github-client-id
+GITHUB_CLIENT_SECRET=your-github-client-secret
 ```
 
-2. Change to the project directory:
+### Example of Usage:
+```jsx
+import { useSession, signIn, signOut } from "next-auth/react";
 
-```sh
-cd PromptWhiz
-```
+const Navbar = () => {
+  const { data: session } = useSession();
 
-3. Install the dependencies:
-
-```sh
-npm install
-```
-
-###  Running PromptWhiz
-
-Use the following command to run PromptWhiz:
-
-```sh
-node app.js
-```
-
-###  Tests
-
-To execute tests, run:
-
-```sh
-npm test
+  return (
+    <nav>
+      {session ? (
+        <>
+          <p>Welcome, {session.user.name}!</p>
+          <button onClick={() => signOut()}>Sign Out</button>
+        </>
+      ) : (
+        <button onClick={() => signIn("google")}>Sign In with Google</button>
+      )}
+    </nav>
+  );
+};
 ```
 
 ---
 
-##  Project Roadmap
+## 🚀 Getting Started
 
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
+### 🔖 Prerequisites
 
----
+Make sure you have the following installed:
 
-##  Contributing
+- [Node.js](https://nodejs.org/en/download/) (v14.x or higher)
+- [MongoDB](https://www.mongodb.com/try/download/community) or a MongoDB cloud instance like [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
-Contributions are welcome! Here are several ways you can contribute:
+### 📦 Installation
 
-- **[Submit Pull Requests](https://github.com/leonardoo210399/PromptWhiz.git/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-- **[Join the Discussions](https://github.com/leonardoo210399/PromptWhiz.git/discussions)**: Share your insights, provide feedback, or ask questions.
-- **[Report Issues](https://github.com/leonardoo210399/PromptWhiz.git/issues)**: Submit bugs found or log feature requests for Promptwhiz.
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/leonardoo210399/PromptWhiz.git
+    cd PromptWhiz.git
+    ```
 
-<details closed>
-    <summary>Contributing Guidelines</summary>
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
 
-1. **Fork the Repository**: Start by forking the project repository to your GitHub account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a Git client.
-   ```sh
-   git clone https://github.com/leonardoo210399/PromptWhiz.git
-   ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
-   ```sh
-   git checkout -b new-feature-x
-   ```
-4. **Make Your Changes**: Develop and test your changes locally.
-5. **Commit Your Changes**: Commit with a clear message describing your updates.
-   ```sh
-   git commit -m 'Implemented new feature x.'
-   ```
-6. **Push to GitHub**: Push the changes to your forked repository.
-   ```sh
-   git push origin new-feature-x
-   ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+3. Create `.env.local` file and add the necessary environment variables:
+    ```sh
+    NEXTAUTH_URL=http://localhost:3000
+    NEXTAUTH_SECRET=your-secret-key
+    ```
 
-Once your PR is reviewed and approved, it will be merged into the main branch.
-
-</details>
+4. Start the development server:
+    ```sh
+    npm run dev
+    ```
 
 ---
 
-##  License
+## 🤖 Usage
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+- **Prompt Feed**: Explore a variety of prompts created by the community.
+- **Authentication**: Sign in with Google or GitHub to create and manage prompts.
+- **Create Prompts**: After signing in, navigate to the create prompt page and share your ideas.
+- **Profile Management**: View your profile to see all the prompts you've created.
+
+---
+
+## 🧪 Tests
+
+To run tests, use the following command:
+```sh
+npm run test
+```
 
 ---
 
-##  Acknowledgments
+## 📌 Project Roadmap
 
-- List any resources, contributors, inspiration, etc. here.
-
-[**Return**](#-quick-links)
+- Add more OAuth providers for authentication.
+- Implement dark mode support.
+- Allow users to comment on prompts.
+- Add search functionality for prompts.
+- Enhance the analytics dashboard for user profiles.
 
 ---
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Feel free to fork the repo and submit pull requests. Please see our [CONTRIBUTING.md](https://github.com/leonardoo210399/PromptWhiz.git/blob/main/CONTRIBUTING.md) for more information.
+
+---
+
+## 🎗 License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/leonardoo210399/PromptWhiz.git/blob/main/LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgments
+
+Special thanks to all contributors, the open-source community, and tools that helped build this project.  
+Logo design from [Icons8](https://icons8.com/icons/set/prompt).
+```
+
+This section now includes comprehensive details about the authentication system, how it's implemented, and how to configure and use it. Let me know if you need more changes!
