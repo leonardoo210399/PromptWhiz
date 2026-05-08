@@ -4,59 +4,100 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
   return (
     <section className='w-full max-w-full flex-start flex-col'>
       <h1 className='head_text text-left'>
-        <span className='blue_gradient'>{type} Post</span>
+        <span className='blue_gradient'>{type} Prompt</span>
       </h1>
-      <p className='desc text-left max-w-md'>
-        {type} and share amazing prompts with the world, and let your
-        imagination run wild with any AI-powered platform
+      <p className='desc text-left' style={{ maxWidth: '440px' }}>
+        {type} and share AI prompts with the community — let your
+        imagination run wild on any AI platform.
       </p>
 
       <form
         onSubmit={handleSubmit}
-        className='mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism'
+        className='mt-10 w-full max-w-2xl flex flex-col gap-6 glassmorphism'
       >
         <label>
-          <span className='font-satoshi font-semibold text-base text-gray-700'>
+          <span
+            style={{
+              fontFamily: '"Syne", sans-serif',
+              fontWeight: 700,
+              fontSize: '0.72rem',
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              color: 'var(--text-muted)',
+              display: 'block',
+              marginBottom: '0.25rem',
+            }}
+          >
             Your AI Prompt
           </span>
-
           <textarea
             value={post.prompt}
             onChange={(e) => setPost({ ...post, prompt: e.target.value })}
-            placeholder='Write your post here'
+            placeholder='Write your prompt here...'
             required
-            className='form_textarea '
+            className='form_textarea'
           />
         </label>
 
         <label>
-          <span className='font-satoshi font-semibold text-base text-gray-700'>
-            Field of Prompt{" "}
-            <span className='font-normal'>
-              (#product, #webdevelopment, #idea, etc.)
+          <span
+            style={{
+              fontFamily: '"Syne", sans-serif',
+              fontWeight: 700,
+              fontSize: '0.72rem',
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              color: 'var(--text-muted)',
+              display: 'block',
+              marginBottom: '0.25rem',
+            }}
+          >
+            Tag{' '}
+            <span
+              style={{
+                fontFamily: '"JetBrains Mono", monospace',
+                fontWeight: 400,
+                textTransform: 'none',
+                letterSpacing: '0.02em',
+                fontSize: '0.68rem',
+                color: 'var(--text-muted)',
+              }}
+            >
+              (#product, #webdev, #idea…)
             </span>
           </span>
           <input
             value={post.tag}
             onChange={(e) => setPost({ ...post, tag: e.target.value })}
             type='text'
-            placeholder='#Tag'
+            placeholder='#tag'
             required
             className='form_input'
           />
         </label>
 
-        <div className='flex-end mx-3 mb-5 gap-4'>
-          <Link href='/' className='text-gray-500 text-sm'>
+        <div className='flex items-center justify-end gap-5 mx-1 pb-1'>
+          <Link
+            href='/'
+            style={{
+              fontFamily: '"Syne", sans-serif',
+              fontWeight: 700,
+              fontSize: '0.68rem',
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+              color: 'var(--text-muted)',
+              transition: 'color 0.12s',
+            }}
+          >
             Cancel
           </Link>
-
           <button
             type='submit'
             disabled={submitting}
-            className='px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white'
+            className='black_btn'
+            style={{ opacity: submitting ? 0.6 : 1 }}
           >
-            {submitting ? `${type}ing...` : type}
+            {submitting ? `${type}ing…` : type}
           </button>
         </div>
       </form>

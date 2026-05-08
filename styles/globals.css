@@ -1,158 +1,402 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* 
-  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
-*/
+:root {
+  --bg: #070707;
+  --surface: #0e0e0e;
+  --surface-2: #151515;
+  --border: #1e1e1e;
+  --border-2: #2a2a2a;
+  --text: #ebebeb;
+  --text-muted: #484848;
+  --accent: #b9ff3b;
+  --accent-dim: rgba(185, 255, 59, 0.1);
+}
 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Syne", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Background layer ── */
 .main {
   width: 100vw;
   min-height: 100vh;
   position: fixed;
-  display: flex;
-  justify-content: center;
-  padding: 120px 24px 160px 24px;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Subtle noise grain */
+.main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 180px 180px;
+}
+
+/* Acid glow top-right corner */
+.main::after {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  right: -320px;
+  top: -350px;
+  background: radial-gradient(
+    circle,
+    rgba(185, 255, 59, 0.055) 0%,
+    transparent 65%
+  );
   pointer-events: none;
 }
 
-.main:before {
-  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
-  position: absolute;
-  content: "";
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-
-.main:after {
-  content: "";
-  background-image: url("/assets/images/grid.svg");
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.4;
-  filter: invert(1);
-}
-
+/* Bottom grid fade */
 .gradient {
-  height: fit-content;
-  z-index: 3;
-  width: 100%;
-  max-width: 640px;
-  background-image: radial-gradient(
-      at 27% 37%,
-      hsla(215, 98%, 61%, 1) 0px,
-      transparent 0%
-    ),
-    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
-    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
-    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
   position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  filter: blur(100px) saturate(150%);
-  top: 80px;
-  opacity: 0.15;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 380px;
+  background-image: linear-gradient(
+      var(--border) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 56px 56px;
+  opacity: 0.35;
+  -webkit-mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5) 0%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5) 0%,
+    transparent 100%
+  );
 }
 
-@media screen and (max-width: 640px) {
-  .main {
-    padding: 0;
-  }
-}
-
-/* Tailwind Styles */
-
+/* ── App shell ── */
 .app {
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
 
+/* ── Buttons ── */
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.1rem;
+  border: 1px solid var(--accent);
+  cursor: pointer;
+  transition: background 0.12s, transform 0.1s;
+  white-space: nowrap;
+}
+
+.black_btn:hover {
+  background: #ccff44;
+  transform: translateY(-1px);
 }
 
 .outline_btn {
-  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.1rem;
+  border: 1px solid var(--border-2);
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s;
+  white-space: nowrap;
 }
 
+.outline_btn:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+/* ── Hero typography ── */
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: clamp(3rem, 8vw, 5.75rem);
+  line-height: 0.92;
+  color: var(--text);
+  letter-spacing: -0.035em;
+  text-align: center;
 }
 
 .orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+  color: var(--accent) !important;
+  background: none !important;
+  -webkit-text-fill-color: var(--accent) !important;
 }
 
 .green_gradient {
-  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+  color: var(--accent) !important;
+  background: none !important;
+  -webkit-text-fill-color: var(--accent) !important;
 }
 
 .blue_gradient {
-  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+  color: var(--accent) !important;
+  background: none !important;
+  -webkit-text-fill-color: var(--accent) !important;
 }
 
 .desc {
-  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  max-width: 460px;
+  line-height: 1.8;
+  margin-top: 1.75rem;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+/* ── Feed / Search ── */
+.feed {
+  margin-top: 2.75rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search_form {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+}
+
+.search_prefix {
+  position: absolute;
+  left: 0.9rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  color: var(--accent);
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
 }
 
 .search_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
+  display: block;
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
+  padding: 0.85rem 1rem 0.85rem 2rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  color: var(--text);
+  outline: none;
+  letter-spacing: 0.015em;
+  transition: border-color 0.15s, background 0.15s;
 }
 
-.copy_btn {
-  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+.search_input::placeholder {
+  color: var(--text-muted);
 }
 
-.glassmorphism {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+.search_input:focus {
+  background: var(--surface-2);
+  border-color: var(--border-2);
+  border-left-color: var(--accent);
 }
 
+/* ── Prompt masonry ── */
 .prompt_layout {
-  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 4rem;
+  columns: 1;
+  gap: 0.875rem;
 }
 
-/* Feed Component */
-.feed {
-  @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
+@media (min-width: 640px) {
+  .prompt_layout {
+    columns: 2;
+    gap: 0.875rem;
+  }
 }
 
-/* Form Component */
+@media (min-width: 1280px) {
+  .prompt_layout {
+    columns: 3;
+    gap: 0.875rem;
+  }
+}
+
+/* ── Prompt card ── */
+.prompt_card {
+  break-inside: avoid;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
+  padding: 1.2rem 1.1rem 1rem 1.1rem;
+  width: 100%;
+  margin-bottom: 0.875rem;
+  transition: background 0.15s, border-color 0.15s;
+  animation: cardIn 0.35s ease both;
+  position: relative;
+}
+
+.prompt_card:hover {
+  background: var(--surface-2);
+  border-color: var(--border-2);
+  border-left-color: var(--accent);
+}
+
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Copy button ── */
+.copy_btn {
+  width: 26px;
+  height: 26px;
+  background: var(--surface-2);
+  border: 1px solid var(--border-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  flex-shrink: 0;
+}
+
+.copy_btn:hover {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+/* ── Glassmorphism → dark form panel ── */
+.glassmorphism {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 2rem;
+}
+
+/* ── Form elements ── */
 .form_textarea {
-  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  margin-top: 0.5rem;
+  padding: 0.875rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  outline: none;
+  resize: vertical;
+  transition: border-color 0.15s;
+}
+
+.form_textarea:focus {
+  border-color: var(--accent);
 }
 
 .form_input {
-  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+  display: flex;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.875rem;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.76rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  outline: none;
+  transition: border-color 0.15s;
 }
 
-/* Nav Component */
+.form_input:focus {
+  border-color: var(--accent);
+}
+
+/* ── Nav ── */
 .logo_text {
-  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: 0.88rem;
+  color: var(--text);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 .dropdown {
-  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.75rem);
+  min-width: 190px;
+  background: var(--surface);
+  border: 1px solid var(--border-2);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-end;
+  z-index: 100;
 }
 
 .dropdown_link {
-  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color 0.12s;
 }
 
-/* PromptCard Component */
-.prompt_card {
-  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
+.dropdown_link:hover {
+  color: var(--accent);
 }
 
+/* ── Utilities ── */
 .flex-center {
   @apply flex justify-center items-center;
 }

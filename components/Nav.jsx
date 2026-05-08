@@ -7,7 +7,6 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const Nav = () => {
   const { data: session } = useSession();
-
   const [providers, setProviders] = useState(null);
   const [toggleDropdown, setToggleDropdown] = useState(false);
 
@@ -19,40 +18,54 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className='flex-between w-full mb-16 pt-3'>
-      <Link href='/' className='flex gap-2 flex-center'>
+    <nav
+      className='flex-between w-full pt-4 pb-4 mb-10'
+      style={{ borderBottom: '1px solid var(--border)' }}
+    >
+      <Link href='/' className='flex gap-3 items-center'>
         <Image
           src='/assets/images/logo.png'
           alt='logo'
-          width={30}
-          height={30}
+          width={26}
+          height={26}
           className='object-contain'
+          style={{ filter: 'brightness(0) invert(1)', opacity: 0.9 }}
         />
-        <p className='logo_text'>Promptopia</p>
+        <p className='logo_text max-sm:hidden'>Promptopia</p>
+        <span
+          style={{
+            display: 'inline-block',
+            width: '6px',
+            height: '6px',
+            background: 'var(--accent)',
+            marginLeft: '-6px',
+            marginBottom: '18px',
+            flexShrink: 0,
+          }}
+        />
       </Link>
 
-      {/* Desktop Navigation */}
-      <div className='sm:flex hidden'>
+      {/* Desktop */}
+      <div className='sm:flex hidden items-center gap-3'>
         {session?.user ? (
-          <div className='flex gap-3 md:gap-5'>
+          <>
             <Link href='/create-prompt' className='black_btn'>
-              Create Post
+              + New Prompt
             </Link>
-
             <button type='button' onClick={signOut} className='outline_btn'>
               Sign Out
             </button>
-
             <Link href='/profile'>
               <Image
                 src={session?.user.image}
-                width={37}
-                height={37}
-                className='rounded-full'
+                width={32}
+                height={32}
+                className='object-contain'
                 alt='profile'
+                style={{ border: '1px solid var(--border-2)' }}
               />
             </Link>
-          </div>
+          </>
         ) : (
           <>
             {providers &&
@@ -60,9 +73,7 @@ const Nav = () => {
                 <button
                   type='button'
                   key={provider.name}
-                  onClick={() => {
-                    signIn(provider.id);
-                  }}
+                  onClick={() => signIn(provider.id)}
                   className='black_btn'
                 >
                   Sign in
@@ -72,19 +83,19 @@ const Nav = () => {
         )}
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile */}
       <div className='sm:hidden flex relative'>
         {session?.user ? (
           <div className='flex'>
             <Image
               src={session?.user.image}
-              width={37}
-              height={37}
-              className='rounded-full'
+              width={32}
+              height={32}
+              className='object-contain'
               alt='profile'
+              style={{ border: '1px solid var(--border-2)', cursor: 'pointer' }}
               onClick={() => setToggleDropdown(!toggleDropdown)}
             />
-
             {toggleDropdown && (
               <div className='dropdown'>
                 <Link
@@ -99,15 +110,12 @@ const Nav = () => {
                   className='dropdown_link'
                   onClick={() => setToggleDropdown(false)}
                 >
-                  Create Prompt
+                  New Prompt
                 </Link>
                 <button
                   type='button'
-                  onClick={() => {
-                    setToggleDropdown(false);
-                    signOut();
-                  }}
-                  className='mt-5 w-full black_btn'
+                  onClick={() => { setToggleDropdown(false); signOut(); }}
+                  className='mt-3 w-full black_btn'
                 >
                   Sign Out
                 </button>
@@ -121,9 +129,7 @@ const Nav = () => {
                 <button
                   type='button'
                   key={provider.name}
-                  onClick={() => {
-                    signIn(provider.id);
-                  }}
+                  onClick={() => signIn(provider.id)}
                   className='black_btn'
                 >
                   Sign in

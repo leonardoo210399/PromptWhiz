@@ -8,12 +8,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ['Satoshi', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
+        syne: ['Syne', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+        satoshi: ['Syne', 'sans-serif'],
+        inter: ['Syne', 'sans-serif'],
       },
       colors: {
-        'primary-orange': '#FF5722',
-      }
+        'primary-orange': '#b9ff3b',
+        accent: '#b9ff3b',
+      },
     },
   },
   plugins: [],
